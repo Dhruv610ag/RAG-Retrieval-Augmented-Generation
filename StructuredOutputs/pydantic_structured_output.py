@@ -25,3 +25,9 @@ That said, while this looks like a legitimate Geekbench screenshot, it’s still
 """
 response=st_model.invoke(prompt)
 print(response)
+"""
+Prompt-Template- Defines What we want and keep the Intructions clear and specific.
+Str-Paser- Ensures the clean and reliable extraction of structured data from the model's output Neet predictable string.
+Chaining(Multi step purpose)-Lets us link multiple steps together to produce more and more of the advacement in the final output.
+When we combine these three together we can make the ai advancements more powerfull and effective in solving complex tasks.
+""" 
