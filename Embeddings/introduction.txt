@@ -1,0 +1,87 @@
+Introduction to Embeddings-
+1. Definition
+Embeddings are dense vector representations of text, images, audio, or other data.
+They convert high-dimensional raw data into numerical vectors that models can understand.
+Interactively Compare the semantic meaning while searching the words
+
+2. Purpose
+Capture the meaning, context, and relationships between data items.
+Allow machines to compare similarity using simple math like cosine similarity.
+
+3. Why Needed in Generative AI
+LLMs can’t directly process raw text → embeddings convert it into mathematical form.
+Enable tasks like retrieval, reasoning, semantic search, and knowledge grounding.
+
+4. Properties of Good Embeddings
+Semantic similarity → similar meanings produce vectors close in space.
+Context-aware → considers surrounding words (e.g., "bank" river vs finance).
+Fixed-size representation regardless of input length.
+
+5. Types of Embeddings
+Word embeddings → Word2Vec, GloVe.
+Sentence embeddings → Sentence-BERT.
+Document embeddings → Long-text representations.
+Multimodal embeddings → CLIP (text + image).
+LLM-based embeddings → OpenAI text-embedding-3-large, BERT embeddings.
+
+6. How Embeddings Are Used in GenAI
+RAG (Retrieval Augmented Generation) → Match user query with vector database.
+Semantic Search → Better than keyword search.
+Question Answering → Retrieve relevant knowledge chunks.
+Clustering → Group similar documents/users/images.
+Recommendation systems → Item-user similarity.
+Anomaly detection → Find outliers in vector space.
+
+7. Embeddings Workflow
+Input text/image/audio
+Encoder model converts it into a vector
+Store vector in vector DB (Pinecone, FAISS, Chroma)
+Compare embeddings using similarity
+Retrieve top-k relevant results
+Pass results to LLM for final generation
+
+8. Popular Embedding Models
+OpenAI Embeddings (text-embedding-3-small/large)
+BERT, RoBERTa, ALBERT
+Google’s Gemini embeddings
+Sentence-BERT (SBERT)
+CLIP (image-text embeddings)
+InstructorXL embeddings
+
+9. Distance Metrics Used
+Cosine similarity (most common)
+Euclidean distance
+Dot product similarity
+
+10. Importance in RAG
+Embeddings make RAG possible.
+They ensure contextually relevant retrieval, improving:
+Accuracy
+Coherence
+Reduction of hallucinations
+
+11. Storing Embeddings
+Specialized vector databases: Pinecone, Weaviate, FAISS, Chroma.
+Allow fast k-NN searches (Approximate Nearest Neighbor algorithms).
+
+12. Applications in Real Systems
+Chatbots with memory
+Document search engines
+Code assistants
+E-commerce product matching
+Fraud detection
+Personalized recommendations
+
+13. Example Concept
+“Car” and “Automobile” → vectors close to each other
+“Car” and “Banana” → vectors far apart
+→ This enables semantic understanding.
+
+14. Embeddings in LLM Training
+Used in the tokenization + encoding stage to convert text into vectors before transformer layers process it.
+
+15. Advantages
+High semantic accuracy
+Supports multimodal data
+Fast similarity matching
+Scalable to millions of documents

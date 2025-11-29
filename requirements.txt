@@ -2,3 +2,7 @@ langchain_community
 langchain_google_genai
 python-dotenv
 pydantic
+langchain_huggingface
+sentence-transformers
+scikit-learn
+faiss-cpu
