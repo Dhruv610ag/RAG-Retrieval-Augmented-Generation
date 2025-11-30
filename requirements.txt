@@ -6,3 +6,5 @@ langchain_huggingface
 sentence-transformers
 scikit-learn
 faiss-cpu
+bs4
+langchain-experimental
