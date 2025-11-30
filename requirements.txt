@@ -8,3 +8,5 @@ scikit-learn
 faiss-cpu
 bs4
 langchain-experimental
+langchain_chroma
+wikipedia
