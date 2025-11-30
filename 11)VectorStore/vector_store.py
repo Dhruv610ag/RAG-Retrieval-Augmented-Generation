@@ -72,3 +72,10 @@ vector_store.get(include=['embeddings','documents', 'metadatas'])
 
 # delete document
 vector_store.delete(ids=['09a39dc6-3ba6-4ea7-927e-fdda591da5e4'])
+
+"""
+What are Vector Stores?
+A vector store is a specialized database for storing and retrieving data as high-dimensional vectors,
+which are numerical representations of information like text, images, or audio. 
+In generative AI, it is essential for similarity searches, enabling models to find and use relevant information based on semantic meaning rather than just keywords
+"""
