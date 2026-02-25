@@ -11,3 +11,7 @@ langchain-experimental
 langchain_chroma
 wikipedia
 youtube_transcript_api
+langgraph
+ipykernel
+langchain-groq
+langchain-tavily
