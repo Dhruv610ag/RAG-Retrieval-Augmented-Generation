@@ -15,3 +15,5 @@ langgraph
 ipykernel
 langchain-groq
 langchain-tavily
+pypdf
+logging
